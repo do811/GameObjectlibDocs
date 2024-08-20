@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>23D: GameObjectlib.CameraContainer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">23D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_game_objectlib.html">GameObjectlib</a></li><li class="navelem"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_game_objectlib_1_1_camera_container-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">GameObjectlib.CameraContainer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acec0b553c1c54a86bffb5af886ecc31c" id="r_acec0b553c1c54a86bffb5af886ecc31c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec0b553c1c54a86bffb5af886ecc31c">CameraContainer</a> (byte status, Vector3 <a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a>)</td></tr>
+<tr class="separator:acec0b553c1c54a86bffb5af886ecc31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972cc61c90631af90b1e5907559f17a3" id="r_a972cc61c90631af90b1e5907559f17a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a972cc61c90631af90b1e5907559f17a3">CameraContainer</a> (GameObject obj)</td></tr>
+<tr class="separator:a972cc61c90631af90b1e5907559f17a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8667f1effef53ce45025366018c90de9" id="r_a8667f1effef53ce45025366018c90de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8667f1effef53ce45025366018c90de9">CenterPosition</a> (float x, float y, float z)</td></tr>
+<tr class="separator:a8667f1effef53ce45025366018c90de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6002fa96fd2573b9ea8deb5f5beb191c" id="r_a6002fa96fd2573b9ea8deb5f5beb191c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6002fa96fd2573b9ea8deb5f5beb191c">CenterPosition</a> (Vector3 <a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a>)</td></tr>
+<tr class="separator:a6002fa96fd2573b9ea8deb5f5beb191c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248f2825d04e08707b6277f2dff80d44" id="r_a248f2825d04e08707b6277f2dff80d44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a248f2825d04e08707b6277f2dff80d44">Cdimension</a> ()</td></tr>
+<tr class="separator:a248f2825d04e08707b6277f2dff80d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174482acbcd5bf7b00f5d513bd0b7232" id="r_a174482acbcd5bf7b00f5d513bd0b7232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174482acbcd5bf7b00f5d513bd0b7232">ChangeAxisY</a> ()</td></tr>
+<tr class="separator:a174482acbcd5bf7b00f5d513bd0b7232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27763b55c0f292eaae6f93150c37565d" id="r_a27763b55c0f292eaae6f93150c37565d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27763b55c0f292eaae6f93150c37565d">ChangeAxisX</a> ()</td></tr>
+<tr class="separator:a27763b55c0f292eaae6f93150c37565d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df61241dee3b5c653c2813264ab2082" id="r_a0df61241dee3b5c653c2813264ab2082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0df61241dee3b5c653c2813264ab2082">ChangeAxisZ</a> ()</td></tr>
+<tr class="separator:a0df61241dee3b5c653c2813264ab2082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a24595cf3cef788b75f813aa50eb66706" id="r_a24595cf3cef788b75f813aa50eb66706"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24595cf3cef788b75f813aa50eb66706">operator Container</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> a)</td></tr>
+<tr class="separator:a24595cf3cef788b75f813aa50eb66706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49d4f98dd6cac7a35135d49c74f40dc" id="r_aa49d4f98dd6cac7a35135d49c74f40dc"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49d4f98dd6cac7a35135d49c74f40dc">operator/</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int mod)</td></tr>
+<tr class="separator:aa49d4f98dd6cac7a35135d49c74f40dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d1ad81a1bb0e916b28feaa9313a39f" id="r_a86d1ad81a1bb0e916b28feaa9313a39f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d1ad81a1bb0e916b28feaa9313a39f">operator&lt;&lt;</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int degree)</td></tr>
+<tr class="separator:a86d1ad81a1bb0e916b28feaa9313a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c92186c26896cc8601f6ee6daef30b" id="r_a76c92186c26896cc8601f6ee6daef30b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76c92186c26896cc8601f6ee6daef30b">operator&gt;&gt;</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int degree)</td></tr>
+<tr class="separator:a76c92186c26896cc8601f6ee6daef30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a74d1878332111e2aeefbf8964def34a3" id="r_a74d1878332111e2aeefbf8964def34a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74d1878332111e2aeefbf8964def34a3">Con</a></td></tr>
+<tr class="separator:a74d1878332111e2aeefbf8964def34a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fce9f199d17c620b854378f1b33e58a" id="r_a3fce9f199d17c620b854378f1b33e58a"><td class="memItemLeft" align="right" valign="top">Camera&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fce9f199d17c620b854378f1b33e58a">Cam</a></td></tr>
+<tr class="separator:a3fce9f199d17c620b854378f1b33e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a187feeae52386d6abb3d58a64e805a80" id="r_a187feeae52386d6abb3d58a64e805a80"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a187feeae52386d6abb3d58a64e805a80">Status</a><code> [get, set]</code></td></tr>
+<tr class="separator:a187feeae52386d6abb3d58a64e805a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7bd22b1281d5e3d3d723379c77089d" id="r_acc7bd22b1281d5e3d3d723379c77089d"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc7bd22b1281d5e3d3d723379c77089d">Dimension</a><code> [get]</code></td></tr>
+<tr class="separator:acc7bd22b1281d5e3d3d723379c77089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751965079ca50428f8831a2759e86523" id="r_a751965079ca50428f8831a2759e86523"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751965079ca50428f8831a2759e86523">Center</a><code> [get]</code></td></tr>
+<tr class="separator:a751965079ca50428f8831a2759e86523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a963e1ba13164bf511d48dc592c0be630" id="r_a963e1ba13164bf511d48dc592c0be630"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a963e1ba13164bf511d48dc592c0be630">Axis</a> = Vector3.up</td></tr>
+<tr class="separator:a963e1ba13164bf511d48dc592c0be630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763563e119a9949dd1da8a414c8667f0" id="r_a763563e119a9949dd1da8a414c8667f0"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a> = new Vector3(0.0f, 0.0f, 0.0f)</td></tr>
+<tr class="separator:a763563e119a9949dd1da8a414c8667f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00133">133</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="acec0b553c1c54a86bffb5af886ecc31c" name="acec0b553c1c54a86bffb5af886ecc31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec0b553c1c54a86bffb5af886ecc31c">&#9670;&#160;</a></span>CameraContainer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectlib.CameraContainer.CameraContainer </td>
+          <td>(</td>
+          <td class="paramtype">byte</td>          <td class="paramname"><span class="paramname"><em>status</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>center</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00137">137</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a972cc61c90631af90b1e5907559f17a3" name="a972cc61c90631af90b1e5907559f17a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972cc61c90631af90b1e5907559f17a3">&#9670;&#160;</a></span>CameraContainer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectlib.CameraContainer.CameraContainer </td>
+          <td>(</td>
+          <td class="paramtype">GameObject</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00157">157</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a248f2825d04e08707b6277f2dff80d44" name="a248f2825d04e08707b6277f2dff80d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248f2825d04e08707b6277f2dff80d44">&#9670;&#160;</a></span>Cdimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.Cdimension </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00188">188</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8667f1effef53ce45025366018c90de9" name="a8667f1effef53ce45025366018c90de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8667f1effef53ce45025366018c90de9">&#9670;&#160;</a></span>CenterPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.CenterPosition </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00177">177</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6002fa96fd2573b9ea8deb5f5beb191c" name="a6002fa96fd2573b9ea8deb5f5beb191c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6002fa96fd2573b9ea8deb5f5beb191c">&#9670;&#160;</a></span>CenterPosition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.CenterPosition </td>
+          <td>(</td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>center</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00182">182</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a27763b55c0f292eaae6f93150c37565d" name="a27763b55c0f292eaae6f93150c37565d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27763b55c0f292eaae6f93150c37565d">&#9670;&#160;</a></span>ChangeAxisX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.ChangeAxisX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00206">206</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a174482acbcd5bf7b00f5d513bd0b7232" name="a174482acbcd5bf7b00f5d513bd0b7232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174482acbcd5bf7b00f5d513bd0b7232">&#9670;&#160;</a></span>ChangeAxisY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.ChangeAxisY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00201">201</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0df61241dee3b5c653c2813264ab2082" name="a0df61241dee3b5c653c2813264ab2082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df61241dee3b5c653c2813264ab2082">&#9670;&#160;</a></span>ChangeAxisZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.CameraContainer.ChangeAxisZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00211">211</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a24595cf3cef788b75f813aa50eb66706" name="a24595cf3cef788b75f813aa50eb66706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24595cf3cef788b75f813aa50eb66706">&#9670;&#160;</a></span>operator Container()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static implicit GameObjectlib.CameraContainer.operator <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00216">216</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa49d4f98dd6cac7a35135d49c74f40dc" name="aa49d4f98dd6cac7a35135d49c74f40dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49d4f98dd6cac7a35135d49c74f40dc">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float GameObjectlib.CameraContainer.operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></td>          <td class="paramname"><span class="paramname"><em>sight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00222">222</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a86d1ad81a1bb0e916b28feaa9313a39f" name="a86d1ad81a1bb0e916b28feaa9313a39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d1ad81a1bb0e916b28feaa9313a39f">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> GameObjectlib.CameraContainer.operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></td>          <td class="paramname"><span class="paramname"><em>sight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>degree</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00242">242</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a76c92186c26896cc8601f6ee6daef30b" name="a76c92186c26896cc8601f6ee6daef30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c92186c26896cc8601f6ee6daef30b">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> GameObjectlib.CameraContainer.operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></td>          <td class="paramname"><span class="paramname"><em>sight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>degree</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00251">251</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a963e1ba13164bf511d48dc592c0be630" name="a963e1ba13164bf511d48dc592c0be630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963e1ba13164bf511d48dc592c0be630">&#9670;&#160;</a></span>Axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 GameObjectlib.CameraContainer.Axis = Vector3.up</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00152">152</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3fce9f199d17c620b854378f1b33e58a" name="a3fce9f199d17c620b854378f1b33e58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fce9f199d17c620b854378f1b33e58a">&#9670;&#160;</a></span>Cam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera GameObjectlib.CameraContainer.Cam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00136">136</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a763563e119a9949dd1da8a414c8667f0" name="a763563e119a9949dd1da8a414c8667f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763563e119a9949dd1da8a414c8667f0">&#9670;&#160;</a></span>center</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 GameObjectlib.CameraContainer.center = new Vector3(0.0f, 0.0f, 0.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00154">154</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a74d1878332111e2aeefbf8964def34a3" name="a74d1878332111e2aeefbf8964def34a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d1878332111e2aeefbf8964def34a3">&#9670;&#160;</a></span>Con</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.CameraContainer.Con</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00135">135</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a751965079ca50428f8831a2759e86523" name="a751965079ca50428f8831a2759e86523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751965079ca50428f8831a2759e86523">&#9670;&#160;</a></span>Center</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 GameObjectlib.CameraContainer.Center</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00155">155</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="acc7bd22b1281d5e3d3d723379c77089d" name="acc7bd22b1281d5e3d3d723379c77089d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7bd22b1281d5e3d3d723379c77089d">&#9670;&#160;</a></span>Dimension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte GameObjectlib.CameraContainer.Dimension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00144">144</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a187feeae52386d6abb3d58a64e805a80" name="a187feeae52386d6abb3d58a64e805a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187feeae52386d6abb3d58a64e805a80">&#9670;&#160;</a></span>Status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte GameObjectlib.CameraContainer.Status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00143">143</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Documents/23D/Assets/Scripts/temp/<a class="el" href="library_8cs_source.html">library.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
