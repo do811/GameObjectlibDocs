@@ -98,42 +98,54 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">GameObjectlib.CameraContainer クラス</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>カメラオブジェクトの操作において、角度調整の記述を省略する為のクラス  
+ <a href="#details">[詳解]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:acec0b553c1c54a86bffb5af886ecc31c" id="r_acec0b553c1c54a86bffb5af886ecc31c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec0b553c1c54a86bffb5af886ecc31c">CameraContainer</a> (byte status, Vector3 <a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a>)</td></tr>
 <tr class="separator:acec0b553c1c54a86bffb5af886ecc31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972cc61c90631af90b1e5907559f17a3" id="r_a972cc61c90631af90b1e5907559f17a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a972cc61c90631af90b1e5907559f17a3">CameraContainer</a> (GameObject obj)</td></tr>
+<tr class="memdesc:a972cc61c90631af90b1e5907559f17a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">CameraContainerクラスのコンストラクタ  <br /></td></tr>
 <tr class="separator:a972cc61c90631af90b1e5907559f17a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8667f1effef53ce45025366018c90de9" id="r_a8667f1effef53ce45025366018c90de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8667f1effef53ce45025366018c90de9">CenterPosition</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:a8667f1effef53ce45025366018c90de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">　回転するにあたって中心座標を設定するメソッド  <br /></td></tr>
 <tr class="separator:a8667f1effef53ce45025366018c90de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6002fa96fd2573b9ea8deb5f5beb191c" id="r_a6002fa96fd2573b9ea8deb5f5beb191c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6002fa96fd2573b9ea8deb5f5beb191c">CenterPosition</a> (Vector3 <a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a>)</td></tr>
+<tr class="memdesc:a6002fa96fd2573b9ea8deb5f5beb191c"><td class="mdescLeft">&#160;</td><td class="mdescRight">　上記関数のVector3バージョン、centerの二通りの設定ができる  <br /></td></tr>
 <tr class="separator:a6002fa96fd2573b9ea8deb5f5beb191c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248f2825d04e08707b6277f2dff80d44" id="r_a248f2825d04e08707b6277f2dff80d44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a248f2825d04e08707b6277f2dff80d44">Cdimension</a> ()</td></tr>
+<tr class="memdesc:a248f2825d04e08707b6277f2dff80d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">　orthographicの真偽をStatusと対応させたまま変更するメソッド  <br /></td></tr>
 <tr class="separator:a248f2825d04e08707b6277f2dff80d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174482acbcd5bf7b00f5d513bd0b7232" id="r_a174482acbcd5bf7b00f5d513bd0b7232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174482acbcd5bf7b00f5d513bd0b7232">ChangeAxisY</a> ()</td></tr>
+<tr class="memdesc:a174482acbcd5bf7b00f5d513bd0b7232"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラを回転させるにあたって軸を設定する関数  <br /></td></tr>
 <tr class="separator:a174482acbcd5bf7b00f5d513bd0b7232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27763b55c0f292eaae6f93150c37565d" id="r_a27763b55c0f292eaae6f93150c37565d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27763b55c0f292eaae6f93150c37565d">ChangeAxisX</a> ()</td></tr>
+<tr class="memdesc:a27763b55c0f292eaae6f93150c37565d"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転させる中心の軸をX軸に設定する関数  <br /></td></tr>
 <tr class="separator:a27763b55c0f292eaae6f93150c37565d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df61241dee3b5c653c2813264ab2082" id="r_a0df61241dee3b5c653c2813264ab2082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0df61241dee3b5c653c2813264ab2082">ChangeAxisZ</a> ()</td></tr>
+<tr class="memdesc:a0df61241dee3b5c653c2813264ab2082"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転させる中心の軸をZ軸に設定する関数  <br /></td></tr>
 <tr class="separator:a0df61241dee3b5c653c2813264ab2082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
 <tr class="memitem:a24595cf3cef788b75f813aa50eb66706" id="r_a24595cf3cef788b75f813aa50eb66706"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24595cf3cef788b75f813aa50eb66706">operator Container</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> a)</td></tr>
+<tr class="memdesc:a24595cf3cef788b75f813aa50eb66706"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバーの省略時にContainerクラスを返すメソッド  <br /></td></tr>
 <tr class="separator:a24595cf3cef788b75f813aa50eb66706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa49d4f98dd6cac7a35135d49c74f40dc" id="r_aa49d4f98dd6cac7a35135d49c74f40dc"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49d4f98dd6cac7a35135d49c74f40dc">operator/</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int mod)</td></tr>
-<tr class="separator:aa49d4f98dd6cac7a35135d49c74f40dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d1ad81a1bb0e916b28feaa9313a39f" id="r_a86d1ad81a1bb0e916b28feaa9313a39f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d1ad81a1bb0e916b28feaa9313a39f">operator&lt;&lt;</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int degree)</td></tr>
 <tr class="separator:a86d1ad81a1bb0e916b28feaa9313a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c92186c26896cc8601f6ee6daef30b" id="r_a76c92186c26896cc8601f6ee6daef30b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76c92186c26896cc8601f6ee6daef30b">operator&gt;&gt;</a> (<a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a> sight, int degree)</td></tr>
+<tr class="memdesc:a76c92186c26896cc8601f6ee6daef30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera &gt;&gt;= 1 というようにすると-1°回転する、要するに左回り  <br /></td></tr>
 <tr class="separator:a76c92186c26896cc8601f6ee6daef30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
 <tr class="memitem:a74d1878332111e2aeefbf8964def34a3" id="r_a74d1878332111e2aeefbf8964def34a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74d1878332111e2aeefbf8964def34a3">Con</a></td></tr>
+<tr class="memdesc:a74d1878332111e2aeefbf8964def34a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタより初期化したコンテナクラス  <br /></td></tr>
 <tr class="separator:a74d1878332111e2aeefbf8964def34a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fce9f199d17c620b854378f1b33e58a" id="r_a3fce9f199d17c620b854378f1b33e58a"><td class="memItemLeft" align="right" valign="top">Camera&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fce9f199d17c620b854378f1b33e58a">Cam</a></td></tr>
+<tr class="memdesc:a3fce9f199d17c620b854378f1b33e58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラクラスにアクセスするためのメンバ変数  <br /></td></tr>
 <tr class="separator:a3fce9f199d17c620b854378f1b33e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -149,12 +161,13 @@ $(function(){ initResizable(false); });
 非公開変数類</h2></td></tr>
 <tr class="memitem:a963e1ba13164bf511d48dc592c0be630" id="r_a963e1ba13164bf511d48dc592c0be630"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a963e1ba13164bf511d48dc592c0be630">Axis</a> = Vector3.up</td></tr>
 <tr class="separator:a963e1ba13164bf511d48dc592c0be630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763563e119a9949dd1da8a414c8667f0" id="r_a763563e119a9949dd1da8a414c8667f0"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a> = new Vector3(0.0f, 0.0f, 0.0f)</td></tr>
+<tr class="memitem:a763563e119a9949dd1da8a414c8667f0" id="r_a763563e119a9949dd1da8a414c8667f0"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a763563e119a9949dd1da8a414c8667f0">center</a></td></tr>
 <tr class="separator:a763563e119a9949dd1da8a414c8667f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock">
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00133">133</a> 行目に定義があります。</p>
+<div class="textblock"><p>カメラオブジェクトの操作において、角度調整の記述を省略する為のクラス </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00167">167</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="acec0b553c1c54a86bffb5af886ecc31c" name="acec0b553c1c54a86bffb5af886ecc31c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acec0b553c1c54a86bffb5af886ecc31c">&#9670;&#160;</a></span>CameraContainer() <span class="overload">[1/2]</span></h2>
@@ -175,7 +188,7 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00137">137</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00181">181</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -194,7 +207,18 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00157">157</a> 行目に定義があります。</p>
+<p>CameraContainerクラスのコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>: Cameraコンポーネントを持つGameObject型</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>カメラオブジェクトを元に、Cameraコンポーネント型の変数Camに格納、</p>
+<p>centerの初期値をカメラオブジェクトの座標にする。</p>
+<p>othographicの真偽でStatusに２もしくは３を割り振る </p><dl class="section note"><dt>覚え書き</dt><dd>othographicが真→二次元的な視点になるためStatusは2になる\nothographicが偽→三次元的視点になるためStatusの値は３になる。 </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00209">209</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -214,7 +238,14 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00188">188</a> 行目に定義があります。</p>
+<p>　orthographicの真偽をStatusと対応させたまま変更するメソッド </p>
+<p>先にStatusの値を変えその値を元にorthographicを変更する<br  />
+これによりStatusとorthographicの対応に齟齬が起こってもこのメソッドを呼び出すことで直る </p><dl class="section note"><dt>覚え書き</dt><dd>Statusの値の変更は１と最下位ビットのXOR演算によるもの<br  />
+Status=2のとき：10(二進数)と1(二進数)一桁目のXORは0と1になる。そして0≠1であるから一桁目が１になり11(3(十進数))になる<br  />
+Status=3のとき：11(二進数)と1(二進数)一桁目のXORは1と1になる。そして1=1であるから一桁目が１になり10(2(十進数))になる<br  />
+このことからStatusの値は2と3以外の値に変化しない。 </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00264">264</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -242,7 +273,19 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00177">177</a> 行目に定義があります。</p>
+<p>　回転するにあたって中心座標を設定するメソッド </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">float</td><td>x : 中心となるオブジェクトのx座標 </td></tr>
+    <tr><td class="paramname">float</td><td>y : 中心となるオブジェクトのy座標 </td></tr>
+    <tr><td class="paramname">float</td><td>z : 中心となるオブジェクトのz座標</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>　受け取った引数の座標をVector3型に変換しメンバ変数centerに格納する </p><dl class="section note"><dt>覚え書き</dt><dd>これを設定してカメラを&lt;&lt;演算子によって回転させると、この座標を中心にカメラが向いたまま任意の角度を回転させることができる。<br  />
+公転のイメージ </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00239">239</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -261,7 +304,16 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00182">182</a> 行目に定義があります。</p>
+<p>　上記関数のVector3バージョン、centerの二通りの設定ができる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Vector3</td><td>center : 中心となるオブジェクトのVector3型の座標 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>Container型のオブジェクトの座標を引数とするときCenterPosition(Obj.At);という記述になり簡潔になるのでオススメ </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00249">249</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -280,7 +332,10 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00206">206</a> 行目に定義があります。</p>
+<p>回転させる中心の軸をX軸に設定する関数 </p>
+<p>これを適用するとCosの値→z、Sinの値→y </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00291">291</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -299,7 +354,11 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00201">201</a> 行目に定義があります。</p>
+<p>カメラを回転させるにあたって軸を設定する関数 </p>
+<p>初期値はY軸であるが、その場合回転によって変化する座標がx,z座標のみ変化する<br  />
+軸を記録しているメンバ変数はAxis、 </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00282">282</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -318,7 +377,10 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00211">211</a> 行目に定義があります。</p>
+<p>回転させる中心の軸をZ軸に設定する関数 </p>
+<p>これを適用するとCosの値→x、Sinの値→y </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00300">300</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -345,38 +407,10 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00216">216</a> 行目に定義があります。</p>
+<p>メンバーの省略時にContainerクラスを返すメソッド </p>
+<dl class="section warning"><dt>警告</dt><dd>明示的な変換ではないため、文脈的に型が明らかな場合にのみ使うように </dd></dl>
 
-</div>
-</div>
-<a id="aa49d4f98dd6cac7a35135d49c74f40dc" name="aa49d4f98dd6cac7a35135d49c74f40dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa49d4f98dd6cac7a35135d49c74f40dc">&#9670;&#160;</a></span>operator/()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static float GameObjectlib.CameraContainer.operator/ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_camera_container.html">CameraContainer</a></td>          <td class="paramname"><span class="paramname"><em>sight</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00222">222</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00309">309</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -407,7 +441,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00242">242</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00320">320</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -438,7 +472,9 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00251">251</a> 行目に定義があります。</p>
+<p>Camera &gt;&gt;= 1 というようにすると-1°回転する、要するに左回り </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00333">333</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -463,7 +499,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00152">152</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00196">196</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -479,7 +515,10 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00136">136</a> 行目に定義があります。</p>
+<p>カメラクラスにアクセスするためのメンバ変数 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>カメラクラスのプロパティorthographicへのアクセスは変数StatusおよびDimensionプロパティにて管理しているが、それ以外のメンバにアクセスする際にCamを使う </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00180">180</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -493,7 +532,7 @@ $(function(){ initResizable(false); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3 GameObjectlib.CameraContainer.center = new Vector3(0.0f, 0.0f, 0.0f)</td>
+          <td class="memname">Vector3 GameObjectlib.CameraContainer.center</td>
         </tr>
       </table>
   </td>
@@ -503,7 +542,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00154">154</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00198">198</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -519,7 +558,10 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00135">135</a> 行目に定義があります。</p>
+<p>コンストラクタより初期化したコンテナクラス </p>
+<p>TransformやRigidbodyなどにアクセスするときはこの変数から </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00174">174</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -544,7 +586,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00155">155</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00199">199</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -568,7 +610,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00144">144</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00188">188</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -592,7 +634,7 @@ $(function(){ initResizable(false); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00143">143</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00187">187</a> 行目に定義があります。</p>
 
 </div>
 </div>

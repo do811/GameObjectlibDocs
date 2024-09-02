@@ -1,760 +1,596 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=11" />
-  <meta name="generator" content="Doxygen 1.11.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>23D: GameObjectlib.Container クラス</title>
-  <link href="tabs.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="clipboard.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="resize.js"></script>
-  <script type="text/javascript" src="cookie.js"></script>
-  <link href="search/search.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="search/searchdata.js"></script>
-  <script type="text/javascript" src="search/search.js"></script>
-  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>23D: GameObjectlib.Container クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-    <div id="titlearea">
-      <table cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr id="projectrow">
-            <td id="projectalign">
-              <div id="projectname">23D
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- end header part -->
-    <!-- 構築: Doxygen 1.11.0 -->
-    <script type="text/javascript">
-      /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-      var searchBox = new SearchBox("searchBox", "search/", '.html');
-      /* @license-end */
-    </script>
-    <script type="text/javascript">
-      /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-      $(function () { codefold.init(0); });
-      /* @license-end */
-    </script>
-    <script type="text/javascript" src="menudata.js"></script>
-    <script type="text/javascript" src="menu.js"></script>
-    <script type="text/javascript">
-      /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-      $(function () {
-        initMenu('', true, false, 'search.php', '検索', false);
-        $(function () { init_search(); });
-      });
-      /* @license-end */
-    </script>
-    <div id="main-nav"></div>
-    <script type="text/javascript">
-      /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-      $(function () { initResizable(false); });
-      /* @license-end */
-    </script>
-    <!-- window showing the filter options -->
-    <div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()"
-      onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
-    </div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">23D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
 
-    <!-- iframe showing the search results (closed by default) -->
-    <div id="MSearchResultsWindow">
-      <div id="MSearchResults">
-        <div class="SRPage">
-          <div id="SRIndex">
-            <div id="SRResults"></div>
-            <div class="SRStatus" id="Loading">読み取り中…</div>
-            <div class="SRStatus" id="Searching">検索中…</div>
-            <div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
 
-    <div id="nav-path" class="navpath">
-      <ul>
-        <li class="navelem"><a class="el" href="namespace_game_objectlib.html">GameObjectlib</a></li>
-        <li class="navelem"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></li>
-      </ul>
-    </div>
-  </div><!-- top -->
-  <div id="doc-content">
-    <div class="header">
-      <div class="summary">
-        <a href="#pub-methods">公開メンバ関数</a> &#124;
-        <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
-        <a href="#pub-attribs">公開変数類</a> &#124;
-        <a href="#properties">プロパティ</a> &#124;
-        <a href="#pri-attribs">非公開変数類</a> &#124;
-        <a href="class_game_objectlib_1_1_container-members.html">全メンバ一覧</a>
-      </div>
-      <div class="headertitle">
-        <div class="title">GameObjectlib.Container クラス</div>
-      </div>
-    </div><!--header-->
-    <div class="contents">
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_game_objectlib.html">GameObjectlib</a></li><li class="navelem"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_game_objectlib_1_1_container-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">GameObjectlib.Container クラス</div></div>
+</div><!--header-->
+<div class="contents">
 
-      <p>コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。<br />
-        コンポーネントへのアクセスの簡略化と座標操作の記述を簡略化する。
-        <a href="#details">[詳解]</a>
-      </p>
-      <table class="memberdecls">
-        <tr class="heading">
-          <td colspan="2">
-            <h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-              公開メンバ関数</h2>
-          </td>
-        </tr>
-        <tr class="memitem:a24e027814f60b76520f236945f50a730" id="r_a24e027814f60b76520f236945f50a730">
-          <td class="memItemLeft" align="right" valign="top">&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a24e027814f60b76520f236945f50a730">Container</a>
-            (GameObject <a class="el" href="#a149b7067b69cc62839dba736db326370">Obj</a>)</td>
-        </tr>
-        <tr class="memdesc:a24e027814f60b76520f236945f50a730">
-          <td class="mdescLeft">&#160;</td>
-          <td class="mdescRight">引数から受け取ったオブジェクトからTransform、Rigidbodyを取得し、格納するコンストラクタ <br /></td>
-        </tr>
-        <tr class="separator:a24e027814f60b76520f236945f50a730">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:ac63c05d953b4745934d15e7257542542" id="r_ac63c05d953b4745934d15e7257542542">
-          <td class="memItemLeft" align="right" valign="top">void&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#ac63c05d953b4745934d15e7257542542">UpdateC</a>
-            ()</td>
-        </tr>
-        <tr class="memdesc:ac63c05d953b4745934d15e7257542542">
-          <td class="mdescLeft">&#160;</td>
-          <td class="mdescRight">Rigidbodyの情報を更新する際に使う <br /></td>
-        </tr>
-        <tr class="separator:ac63c05d953b4745934d15e7257542542">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-      </table>
-      <table class="memberdecls">
-        <tr class="heading">
-          <td colspan="2">
-            <h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-              静的公開メンバ関数</h2>
-          </td>
-        </tr>
-        <tr class="memitem:aac95e76237e0cb090567a430c71dde44" id="r_aac95e76237e0cb090567a430c71dde44">
-          <td class="memItemLeft" align="right" valign="top">static implicit&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#aac95e76237e0cb090567a430c71dde44">operator
-              GameObject</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a)</td>
-        </tr>
-        <tr class="memdesc:aac95e76237e0cb090567a430c71dde44">
-          <td class="mdescLeft">&#160;</td>
-          <td class="mdescRight">Container型変数(今回はaとする)のメンバ変数Objを省略時、デフォルトでGameObjectとして返す関数。 <br /></td>
-        </tr>
-        <tr class="separator:aac95e76237e0cb090567a430c71dde44">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:ad51a11193b6bb52a83154d7748a243ea" id="r_ad51a11193b6bb52a83154d7748a243ea">
-          <td class="memItemLeft" align="right" valign="top">static <a class="el"
-              href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#ad51a11193b6bb52a83154d7748a243ea">operator+</a>
-            (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, float x)</td>
-        </tr>
-        <tr class="memdesc:ad51a11193b6bb52a83154d7748a243ea">
-          <td class="mdescLeft">&#160;</td>
-          <td class="mdescRight">Container型変数から直接x座標を変更するための演算子オーバーロード関数 <br /></td>
-        </tr>
-        <tr class="separator:ad51a11193b6bb52a83154d7748a243ea">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:ab6edc1ae7f52ce673cb0b5cf4cb412a3" id="r_ab6edc1ae7f52ce673cb0b5cf4cb412a3">
-          <td class="memItemLeft" align="right" valign="top">static <a class="el"
-              href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#ab6edc1ae7f52ce673cb0b5cf4cb412a3">operator+</a>
-            (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a,(float x, float y) b)</td>
-        </tr>
-        <tr class="memdesc:ab6edc1ae7f52ce673cb0b5cf4cb412a3">
-          <td class="mdescLeft">&#160;</td>
-          <td class="mdescRight">上記関数のx座標とy座標とを同時に加算するバージョンの関数 <br /></td>
-        </tr>
-        <tr class="separator:ab6edc1ae7f52ce673cb0b5cf4cb412a3">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:a4cf1583c1a83a205fb51d60fe9568b9b" id="r_a4cf1583c1a83a205fb51d60fe9568b9b">
-          <td class="memItemLeft" align="right" valign="top">static <a class="el"
-              href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a4cf1583c1a83a205fb51d60fe9568b9b">operator+</a>
-            (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a,(float x, float y, float z) b)
-          </td>
-        </tr>
-        <tr class="separator:a4cf1583c1a83a205fb51d60fe9568b9b">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:a331abc8ea38b413522cfb071a08244b6" id="r_a331abc8ea38b413522cfb071a08244b6">
-          <td class="memItemLeft" align="right" valign="top">static <a class="el"
-              href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a331abc8ea38b413522cfb071a08244b6">operator+</a>
-            (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, Vector3 b)</td>
-        </tr>
-        <tr class="separator:a331abc8ea38b413522cfb071a08244b6">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:a3267d04c405470f12f8e23ce65d21079" id="r_a3267d04c405470f12f8e23ce65d21079">
-          <td class="memItemLeft" align="right" valign="top">static <a class="el"
-              href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a3267d04c405470f12f8e23ce65d21079">operator-</a>
-            (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, Vector3 b)</td>
-        </tr>
-        <tr class="separator:a3267d04c405470f12f8e23ce65d21079">
-          <td class="memSeparator" colspan="2">&#160;</td>
+<p>コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。　 格納するためのメンバ変数が下記の３つであるため、その他コンポーネントを追加したい場合は継承を使うのが無難  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a24e027814f60b76520f236945f50a730" id="r_a24e027814f60b76520f236945f50a730"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24e027814f60b76520f236945f50a730">Container</a> (GameObject <a class="el" href="#a149b7067b69cc62839dba736db326370">Obj</a>)</td></tr>
+<tr class="memdesc:a24e027814f60b76520f236945f50a730"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数から受け取ったオブジェクトからTransform、Rigidbodyを取得し、格納するコンストラクタ  <br /></td></tr>
+<tr class="separator:a24e027814f60b76520f236945f50a730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63c05d953b4745934d15e7257542542" id="r_ac63c05d953b4745934d15e7257542542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63c05d953b4745934d15e7257542542">UpdateC</a> ()</td></tr>
+<tr class="memdesc:ac63c05d953b4745934d15e7257542542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rigidbodyの情報を更新する際に使う  <br /></td></tr>
+<tr class="separator:ac63c05d953b4745934d15e7257542542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aac95e76237e0cb090567a430c71dde44" id="r_aac95e76237e0cb090567a430c71dde44"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac95e76237e0cb090567a430c71dde44">operator GameObject</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a)</td></tr>
+<tr class="memdesc:aac95e76237e0cb090567a430c71dde44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container型変数(今回はaとする)のメンバ変数Objを省略時、デフォルトでGameObjectとして返す関数。  <br /></td></tr>
+<tr class="separator:aac95e76237e0cb090567a430c71dde44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51a11193b6bb52a83154d7748a243ea" id="r_ad51a11193b6bb52a83154d7748a243ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51a11193b6bb52a83154d7748a243ea">operator+</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, float x)</td></tr>
+<tr class="memdesc:ad51a11193b6bb52a83154d7748a243ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container型変数から直接x座標を変更するための演算子オーバーロード関数  <br /></td></tr>
+<tr class="separator:ad51a11193b6bb52a83154d7748a243ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6edc1ae7f52ce673cb0b5cf4cb412a3" id="r_ab6edc1ae7f52ce673cb0b5cf4cb412a3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6edc1ae7f52ce673cb0b5cf4cb412a3">operator+</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a,(float x, float y) b)</td></tr>
+<tr class="memdesc:ab6edc1ae7f52ce673cb0b5cf4cb412a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">上記関数のx座標とy座標とを同時に加算するバージョンの関数 @detail 引数にタプルを使用しているためa = a + x + y のように書かず以下の使用例のように書く  <br /></td></tr>
+<tr class="separator:ab6edc1ae7f52ce673cb0b5cf4cb412a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf1583c1a83a205fb51d60fe9568b9b" id="r_a4cf1583c1a83a205fb51d60fe9568b9b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cf1583c1a83a205fb51d60fe9568b9b">operator+</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a,(float x, float y, float z) b)</td></tr>
+<tr class="separator:a4cf1583c1a83a205fb51d60fe9568b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331abc8ea38b413522cfb071a08244b6" id="r_a331abc8ea38b413522cfb071a08244b6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a331abc8ea38b413522cfb071a08244b6">operator+</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, Vector3 b)</td></tr>
+<tr class="separator:a331abc8ea38b413522cfb071a08244b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3267d04c405470f12f8e23ce65d21079" id="r_a3267d04c405470f12f8e23ce65d21079"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3267d04c405470f12f8e23ce65d21079">operator-</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, Vector3 b)</td></tr>
+<tr class="separator:a3267d04c405470f12f8e23ce65d21079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6779004997e5236e2baa27fcd6456a" id="r_acd6779004997e5236e2baa27fcd6456a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd6779004997e5236e2baa27fcd6456a">operator&amp;</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a,(float x, float y, float z) b)</td></tr>
+<tr class="separator:acd6779004997e5236e2baa27fcd6456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fffa7229331ec93bda2002def8b2a7" id="r_a62fffa7229331ec93bda2002def8b2a7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62fffa7229331ec93bda2002def8b2a7">operator&amp;</a> (<a class="el" href="class_game_objectlib_1_1_container.html">Container</a> a, Vector3 b)</td></tr>
+<tr class="separator:a62fffa7229331ec93bda2002def8b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a149b7067b69cc62839dba736db326370" id="r_a149b7067b69cc62839dba736db326370"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149b7067b69cc62839dba736db326370">Obj</a></td></tr>
+<tr class="separator:a149b7067b69cc62839dba736db326370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddded0141fc846fbeb09fa3efc821e2" id="r_a2ddded0141fc846fbeb09fa3efc821e2"><td class="memItemLeft" align="right" valign="top">Rigidbody&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddded0141fc846fbeb09fa3efc821e2">Rig</a></td></tr>
+<tr class="separator:a2ddded0141fc846fbeb09fa3efc821e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:ab4e0eb9aa189a069dbf26bae5ac859f6" id="r_ab4e0eb9aa189a069dbf26bae5ac859f6"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4e0eb9aa189a069dbf26bae5ac859f6">Trs</a><code> [get, set]</code></td></tr>
+<tr class="separator:ab4e0eb9aa189a069dbf26bae5ac859f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8b2c8d889f6a7a859fd5fc5f3818cd" id="r_a9c8b2c8d889f6a7a859fd5fc5f3818cd"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c8b2c8d889f6a7a859fd5fc5f3818cd">At</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9c8b2c8d889f6a7a859fd5fc5f3818cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">このオブジェクトの座標を得るためのプロパティ  <br /></td></tr>
+<tr class="separator:a9c8b2c8d889f6a7a859fd5fc5f3818cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aad40da819c493ce5757cbea774b3dc1f" id="r_aad40da819c493ce5757cbea774b3dc1f"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad40da819c493ce5757cbea774b3dc1f">trs</a></td></tr>
+<tr class="separator:aad40da819c493ce5757cbea774b3dc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。　 格納するためのメンバ変数が下記の３つであるため、その他コンポーネントを追加したい場合は継承を使うのが無難 </p>
+<dl class="section user"><dt>格納したコンポーネントは簡潔な記述のため略字になっているので注意</dt><dd></dd></dl>
+<p>以下略字対応 @detail Obj→GameObject @detail Trs→Transform @detail Rig→Rigidbody </p>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00027">27</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a24e027814f60b76520f236945f50a730" name="a24e027814f60b76520f236945f50a730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e027814f60b76520f236945f50a730">&#9670;&#160;</a></span>Container()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectlib.Container.Container </td>
+          <td>(</td>
+          <td class="paramtype">GameObject</td>          <td class="paramname"><span class="paramname"><em>Obj</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-      <table class="memberdecls">
-        <tr class="heading">
-          <td colspan="2">
-            <h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-              公開変数類</h2>
-          </td>
-        </tr>
-        <tr class="memitem:a149b7067b69cc62839dba736db326370" id="r_a149b7067b69cc62839dba736db326370">
-          <td class="memItemLeft" align="right" valign="top">GameObject&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a149b7067b69cc62839dba736db326370">Obj</a></td>
-        </tr>
-        <tr class="separator:a149b7067b69cc62839dba736db326370">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-        <tr class="memitem:a2ddded0141fc846fbeb09fa3efc821e2" id="r_a2ddded0141fc846fbeb09fa3efc821e2">
-          <td class="memItemLeft" align="right" valign="top">Rigidbody&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#a2ddded0141fc846fbeb09fa3efc821e2">Rig</a></td>
-        </tr>
-        <tr class="separator:a2ddded0141fc846fbeb09fa3efc821e2">
-          <td class="memSeparator" colspan="2">&#160;</td>
-        </tr>
-      </table>
-      <table class="memberdecls">
-        <tr class="heading">
-          <td colspan="2">
-            <h2 class="groupheader"><a id="properties" name="properties"></a>
-              プロパティ</h2>
-          </td>
-        </tr>
-        <tr class="memitem:ab4e0eb9aa189a069dbf26bae5ac859f6" id="r_ab4e0eb9aa189a069dbf26bae5ac859f6">
-          <td class="memItemLeft" align="right" valign="top">Transform&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el"
-              href="#ab4e0eb9aa189a069dbf26bae5ac859f6">Trs</a><code> [get, set]</code></td>
-        </tr>
-        <tr class="separator:ab4e0eb9aa189a069dbf26bae5ac859f6">
-          <td class="memSeparator" colspan="2">&#160;</td>
+</div><div class="memdoc">
+
+<p>引数から受け取ったオブジェクトからTransform、Rigidbodyを取得し、格納するコンストラクタ </p>
+<dl class="section warning"><dt>警告</dt><dd>ObjにRigidbodyが無い場合もあり得るため、その際にRigを呼び出してもNULLが返ってくる。 </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00063">63</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="aac95e76237e0cb090567a430c71dde44" name="aac95e76237e0cb090567a430c71dde44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac95e76237e0cb090567a430c71dde44">&#9670;&#160;</a></span>operator GameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static implicit GameObjectlib.Container.operator GameObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-      <table class="memberdecls">
-        <tr class="heading">
-          <td colspan="2">
-            <h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-              非公開変数類</h2>
-          </td>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Container型変数(今回はaとする)のメンバ変数Objを省略時、デフォルトでGameObjectとして返す関数。 </p>
+<dl class="section user"><dt>例→Debug.Log(a);//Debug.Log(a.Obj)と同値</dt><dd></dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>GameObject型はどのUnity C.スクリプトで一般に高い使用頻度であるためこの型にした。 </dd>
+<dd>
+なので作るものによりTrsのほうがいいかもしれないのでその場合このクラス継承、オーバーロードで変更。 @detail 変更例→public static implicit operator Transform(Container a){return a.Trs;} </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>暗黙的変換を行っているため、型の扱いが不安な場面(インスタンス生成の引数として渡す等)での使用は避けるのが懸命。 </dd></dl>
+
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00089">89</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a62fffa7229331ec93bda2002def8b2a7" name="a62fffa7229331ec93bda2002def8b2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62fffa7229331ec93bda2002def8b2a7">&#9670;&#160;</a></span>operator&amp;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
-        <tr class="memitem:aad40da819c493ce5757cbea774b3dc1f" id="r_aad40da819c493ce5757cbea774b3dc1f">
-          <td class="memItemLeft" align="right" valign="top">Transform&#160;</td>
-          <td class="memItemRight" valign="bottom"><a class="el" href="#aad40da819c493ce5757cbea774b3dc1f">trs</a></td>
-        </tr>
-        <tr class="separator:aad40da819c493ce5757cbea774b3dc1f">
-          <td class="memSeparator" colspan="2">&#160;</td>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
         </tr>
       </table>
-      <a name="details" id="details"></a>
-      <h2 class="groupheader">詳解</h2>
-      <div class="textblock">
-        <p>コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。<br />
-          コンポーネントへのアクセスの簡略化と座標操作の記述を簡略化する。 </p>
-        <dl class="section note">
-          <dt>覚え書き</dt>
-          <dd>格納するためのメンバ変数が下記の３つであるため、その他コンポーネントを追加したい場合は継承を使うのが無難</dd>
-        </dl>
-        <p>格納したコンポーネントは簡潔な記述のため略字になっているので注意</p>
-        <p>以下略字対応</p>
-        <dl class="section user">
-          <dt>Obj→GameObject</dt>
-          <dd></dd>
-        </dl>
-        <dl class="section user">
-          <dt>Trs→Transform</dt>
-          <dd></dd>
-        </dl>
-        <dl class="section user">
-          <dt>Rig→Rigidbody</dt>
-          <dd></dd>
-        </dl>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-        <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-            href="library_8cs_source.html#l00029">29</a> 行目に定義があります。</p>
-      </div>
-      <h2 class="groupheader">構築子と解体子</h2>
-      <a id="a24e027814f60b76520f236945f50a730" name="a24e027814f60b76520f236945f50a730"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a24e027814f60b76520f236945f50a730">&#9670;&#160;</a></span>Container()</h2>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00156">156</a> 行目に定義があります。</p>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="memname">
-            <tr>
-              <td class="memname">GameObjectlib.Container.Container </td>
-              <td>(</td>
-              <td class="paramtype">GameObject</td>
-              <td class="paramname"><span class="paramname"><em>Obj</em></span></td>
-              <td>)</td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+</div>
+</div>
+<a id="acd6779004997e5236e2baa27fcd6456a" name="acd6779004997e5236e2baa27fcd6456a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6779004997e5236e2baa27fcd6456a">&#9670;&#160;</a></span>operator&amp;() <span class="overload">[2/2]</span></h2>
 
-          <p>引数から受け取ったオブジェクトからTransform、Rigidbodyを取得し、格納するコンストラクタ </p>
-          <dl class="section warning">
-            <dt>警告</dt>
-            <dd>ObjにRigidbodyが無い場合もあり得るため、その際にRigを呼び出してもNULLが返ってくる。 </dd>
-          </dl>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(float x, float y, float z)</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00052">52</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00151">151</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <h2 class="groupheader">メソッド詳解</h2>
-      <a id="aac95e76237e0cb090567a430c71dde44" name="aac95e76237e0cb090567a430c71dde44"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#aac95e76237e0cb090567a430c71dde44">&#9670;&#160;</a></span>operator GameObject()</h2>
+</div>
+</div>
+<a id="ad51a11193b6bb52a83154d7748a243ea" name="ad51a11193b6bb52a83154d7748a243ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51a11193b6bb52a83154d7748a243ea">&#9670;&#160;</a></span>operator+() <span class="overload">[1/4]</span></h2>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static implicit GameObjectlib.Container.operator GameObject </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span></td>
-                    <td>)</td>
-                    <td></td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-          <p>Container型変数(今回はaとする)のメンバ変数Objを省略時、デフォルトでGameObjectとして返す関数。 </p>
-          <dl class="section user">
-            <dt>例→Debug.Log(a);//Debug.Log(a.Obj)と同値</dt>
-            <dd></dd>
-          </dl>
-          <dl class="section note">
-            <dt>覚え書き</dt>
-            <dd>GameObject型はどのUnity C.スクリプトでも一般に高い使用頻度であるためこの型にした。 </dd>
-            <dd>
-              なので作るものによりTrsのほうがいいかもしれないのでその場合このクラス継承、オーバーロードで変更。</dd>
-          </dl>
-          <p>変更例→public static implicit operator Transform(Container a){return a.Trs;} </p>
-          <dl class="section warning">
-            <dt>警告</dt>
-            <dd>暗黙的変換を行っているため、型の扱いが不安な場面(インスタンス生成の引数として渡す等)での使用は避けるのが懸命。 </dd>
-          </dl>
+<p>Container型変数から直接x座標を変更するための演算子オーバーロード関数 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>positionはVector3型なのでxを元にそのインスタンスを一時生成 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>引数が一つであった場合問答無用でxを変更するためa = a + y;と記述してしまった場合position.yではなくposition.xの値が変わるため注意 </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_game_objectlib_1_1_container.html" title="コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。　 格納するためのメンバ変数が下記の３つであるため、その他コンポーネントを追加したい場合は継承...">Container</a></td><td>a:演算対象オブジェクト </td></tr>
+    <tr><td class="paramname">float</td><td>x:a.Transform.position.xに加算するfloat型の変数(定数も可) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>position変更後のContainer型 </dd></dl>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00078">78</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00103">103</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <a id="ad51a11193b6bb52a83154d7748a243ea" name="ad51a11193b6bb52a83154d7748a243ea"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#ad51a11193b6bb52a83154d7748a243ea">&#9670;&#160;</a></span>operator+() <span
-          class="overload">[1/4]</span></h2>
+</div>
+</div>
+<a id="a331abc8ea38b413522cfb071a08244b6" name="a331abc8ea38b413522cfb071a08244b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331abc8ea38b413522cfb071a08244b6">&#9670;&#160;</a></span>operator+() <span class="overload">[2/4]</span></h2>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static <a class="el"
-                        href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+
-                    </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-                  </tr>
-                  <tr>
-                    <td class="paramkey"></td>
-                    <td></td>
-                    <td class="paramtype">float</td>
-                    <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-          <p>Container型変数から直接x座標を変更するための演算子オーバーロード関数 </p>
-          <dl class="section note">
-            <dt>覚え書き</dt>
-            <dd>positionはVector3型なのでxを元にそのインスタンスを一時生成 </dd>
-          </dl>
-          <dl class="section warning">
-            <dt>警告</dt>
-            <dd>引数が一つであった場合問答無用でxを変更するためa = a + y;と記述してしまった場合position.yではなくposition.xの値が変わるため注意 </dd>
-          </dl>
-          <dl class="params">
-            <dt>引数</dt>
-            <dd>
-              <table class="params">
-                <tr>
-                  <td class="paramname"><a class="el" href="class_game_objectlib_1_1_container.html"
-                      title="コンストラクタにてオブジェクトを取得、その後Transform等のコンポーネント複数をメンバ変数に格納する。  コンポーネントへのアクセスの簡略化と座標操作の記述を簡略化する。">Container</a>
-                  </td>
-                  <td>a:演算対象オブジェクト </td>
-                </tr>
-                <tr>
-                  <td class="paramname">float</td>
-                  <td>x:a.Transform.position.xに加算するfloat型の変数(定数も可) </td>
-                </tr>
-              </table>
-            </dd>
-          </dl>
-          <dl class="section return">
-            <dt>戻り値</dt>
-            <dd>position変更後のContainer型 </dd>
-          </dl>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00132">132</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00092">92</a> 行目に定義があります。</p>
+</div>
+</div>
+<a id="ab6edc1ae7f52ce673cb0b5cf4cb412a3" name="ab6edc1ae7f52ce673cb0b5cf4cb412a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6edc1ae7f52ce673cb0b5cf4cb412a3">&#9670;&#160;</a></span>operator+() <span class="overload">[3/4]</span></h2>
 
-        </div>
-      </div>
-      <a id="a331abc8ea38b413522cfb071a08244b6" name="a331abc8ea38b413522cfb071a08244b6"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a331abc8ea38b413522cfb071a08244b6">&#9670;&#160;</a></span>operator+() <span
-          class="overload">[2/4]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(float x, float y)</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static <a class="el"
-                        href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+
-                    </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-                  </tr>
-                  <tr>
-                    <td class="paramkey"></td>
-                    <td></td>
-                    <td class="paramtype">Vector3</td>
-                    <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p>上記関数のx座標とy座標とを同時に加算するバージョンの関数 @detail 引数にタプルを使用しているためa = a + x + y のように書かず以下の使用例のように書く </p>
+<p>上記関数のx座標とy座標とz座標とを同時に加算するバージョンの関数</p>
+<dl class="section note"><dt>覚え書き</dt><dd>a = a + (x,y);またはa+=(x,y)</dd>
+<dd>
+使用例 a = a + (x,y,z);またはa+=(x,y) </dd></dl>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00121">121</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00115">115</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <a id="ab6edc1ae7f52ce673cb0b5cf4cb412a3" name="ab6edc1ae7f52ce673cb0b5cf4cb412a3"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#ab6edc1ae7f52ce673cb0b5cf4cb412a3">&#9670;&#160;</a></span>operator+() <span
-          class="overload">[3/4]</span></h2>
+</div>
+</div>
+<a id="a4cf1583c1a83a205fb51d60fe9568b9b" name="a4cf1583c1a83a205fb51d60fe9568b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf1583c1a83a205fb51d60fe9568b9b">&#9670;&#160;</a></span>operator+() <span class="overload">[4/4]</span></h2>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static <a class="el"
-                        href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+
-                    </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-                  </tr>
-                  <tr>
-                    <td class="paramkey"></td>
-                    <td></td>
-                    <td class="paramtype">(float x, float y)</td>
-                    <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(float x, float y, float z)</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-          <p>上記関数のx座標とy座標とを同時に加算するバージョンの関数 </p>
-          <p>上記関数のx座標とy座標とz座標とを同時に加算するバージョンの関数</p>
-          <p>引数にタプルを使用しているためa = a + x + y のように書かず以下の使用例のように書く </p>
-          <dl class="section note">
-            <dt>覚え書き</dt>
-            <dd>a = a + (x,y);またはa+=(x,y)</dd>
-            <dd>
-              使用例 a = a + (x,y,z);またはa+=(x,y) </dd>
-          </dl>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00125">125</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00104">104</a> 行目に定義があります。</p>
+</div>
+</div>
+<a id="a3267d04c405470f12f8e23ce65d21079" name="a3267d04c405470f12f8e23ce65d21079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3267d04c405470f12f8e23ce65d21079">&#9670;&#160;</a></span>operator-()</h2>
 
-        </div>
-      </div>
-      <a id="a4cf1583c1a83a205fb51d60fe9568b9b" name="a4cf1583c1a83a205fb51d60fe9568b9b"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a4cf1583c1a83a205fb51d60fe9568b9b">&#9670;&#160;</a></span>operator+() <span
-          class="overload">[4/4]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static <a class="el"
-                        href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator+
-                    </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-                  </tr>
-                  <tr>
-                    <td class="paramkey"></td>
-                    <td></td>
-                    <td class="paramtype">(float x, float y, float z)</td>
-                    <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00138">138</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00114">114</a> 行目に定義があります。</p>
+</div>
+</div>
+<a id="ac63c05d953b4745934d15e7257542542" name="ac63c05d953b4745934d15e7257542542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63c05d953b4745934d15e7257542542">&#9670;&#160;</a></span>UpdateC()</h2>
 
-        </div>
-      </div>
-      <a id="a3267d04c405470f12f8e23ce65d21079" name="a3267d04c405470f12f8e23ce65d21079"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a3267d04c405470f12f8e23ce65d21079">&#9670;&#160;</a></span>operator-()</h2>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectlib.Container.UpdateC </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">static <a class="el"
-                        href="class_game_objectlib_1_1_container.html">Container</a> GameObjectlib.Container.operator-
-                    </td>
-                    <td>(</td>
-                    <td class="paramtype"><a class="el" href="class_game_objectlib_1_1_container.html">Container</a>
-                    </td>
-                    <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-                  </tr>
-                  <tr>
-                    <td class="paramkey"></td>
-                    <td></td>
-                    <td class="paramtype">Vector3</td>
-                    <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">static</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p>Rigidbodyの情報を更新する際に使う </p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00127">127</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00074">74</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <a id="ac63c05d953b4745934d15e7257542542" name="ac63c05d953b4745934d15e7257542542"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#ac63c05d953b4745934d15e7257542542">&#9670;&#160;</a></span>UpdateC()</h2>
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a149b7067b69cc62839dba736db326370" name="a149b7067b69cc62839dba736db326370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149b7067b69cc62839dba736db326370">&#9670;&#160;</a></span>Obj</h2>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="memname">
-            <tr>
-              <td class="memname">void GameObjectlib.Container.UpdateC </td>
-              <td>(</td>
-              <td class="paramname"><span class="paramname"><em></em></span></td>
-              <td>)</td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject GameObjectlib.Container.Obj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-          <p>Rigidbodyの情報を更新する際に使う </p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00029">29</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00063">63</a> 行目に定義があります。</p>
+</div>
+</div>
+<a id="a2ddded0141fc846fbeb09fa3efc821e2" name="a2ddded0141fc846fbeb09fa3efc821e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddded0141fc846fbeb09fa3efc821e2">&#9670;&#160;</a></span>Rig</h2>
 
-        </div>
-      </div>
-      <h2 class="groupheader">メンバ詳解</h2>
-      <a id="a149b7067b69cc62839dba736db326370" name="a149b7067b69cc62839dba736db326370"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a149b7067b69cc62839dba736db326370">&#9670;&#160;</a></span>Obj</h2>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rigidbody GameObjectlib.Container.Rig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="memname">
-            <tr>
-              <td class="memname">GameObject GameObjectlib.Container.Obj</td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00030">30</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00031">31</a> 行目に定義があります。</p>
+</div>
+</div>
+<a id="aad40da819c493ce5757cbea774b3dc1f" name="aad40da819c493ce5757cbea774b3dc1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad40da819c493ce5757cbea774b3dc1f">&#9670;&#160;</a></span>trs</h2>
 
-        </div>
-      </div>
-      <a id="a2ddded0141fc846fbeb09fa3efc821e2" name="a2ddded0141fc846fbeb09fa3efc821e2"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#a2ddded0141fc846fbeb09fa3efc821e2">&#9670;&#160;</a></span>Rig</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform GameObjectlib.Container.trs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="memname">
-            <tr>
-              <td class="memname">Rigidbody GameObjectlib.Container.Rig</td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00032">32</a> 行目に定義があります。</p>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00032">32</a> 行目に定義があります。</p>
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a9c8b2c8d889f6a7a859fd5fc5f3818cd" name="a9c8b2c8d889f6a7a859fd5fc5f3818cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8b2c8d889f6a7a859fd5fc5f3818cd">&#9670;&#160;</a></span>At</h2>
 
-        </div>
-      </div>
-      <a id="aad40da819c493ce5757cbea774b3dc1f" name="aad40da819c493ce5757cbea774b3dc1f"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#aad40da819c493ce5757cbea774b3dc1f">&#9670;&#160;</a></span>trs</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 GameObjectlib.Container.At</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">Transform GameObjectlib.Container.trs</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">private</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<p>このオブジェクトの座標を得るためのプロパティ </p>
+<dl class="section date"><dt>日付</dt><dd>2024-8-22 これが無い場合Obj.Trs.positionというように長くなってしまうため<br  />
+Obj.Atのように使うため追加した </dd></dl>
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00034">34</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00050">50</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <h2 class="groupheader">プロパティ詳解</h2>
-      <a id="ab4e0eb9aa189a069dbf26bae5ac859f6" name="ab4e0eb9aa189a069dbf26bae5ac859f6"></a>
-      <h2 class="memtitle"><span class="permalink"><a
-            href="#ab4e0eb9aa189a069dbf26bae5ac859f6">&#9670;&#160;</a></span>Trs</h2>
+</div>
+</div>
+<a id="ab4e0eb9aa189a069dbf26bae5ac859f6" name="ab4e0eb9aa189a069dbf26bae5ac859f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e0eb9aa189a069dbf26bae5ac859f6">&#9670;&#160;</a></span>Trs</h2>
 
-      <div class="memitem">
-        <div class="memproto">
-          <table class="mlabels">
-            <tr>
-              <td class="mlabels-left">
-                <table class="memname">
-                  <tr>
-                    <td class="memname">Transform GameObjectlib.Container.Trs</td>
-                  </tr>
-                </table>
-              </td>
-              <td class="mlabels-right">
-                <span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="memdoc">
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform GameObjectlib.Container.Trs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-          <p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el"
-              href="library_8cs_source.html#l00035">35</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="library_8cs_source.html">library.cs</a> の <a class="el" href="library_8cs_source.html#l00033">33</a> 行目に定義があります。</p>
 
-        </div>
-      </div>
-      <hr />このクラス詳解は次のファイルから抽出されました:<ul>
-        <li>Documents/23D/Assets/Scripts/temp/<a class="el" href="library_8cs_source.html">library.cs</a></li>
-      </ul>
-    </div><!-- contents -->
-    <!-- start footer part -->
-    <hr class="footer" />
-    <address class="footer"><small>
-        構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104"
-            height="31" alt="doxygen" /></a> 1.11.0
-      </small></address>
-  </div><!-- doc-content -->
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Documents/23D/Assets/Scripts/temp/<a class="el" href="library_8cs_source.html">library.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
 </body>
-
 </html>
